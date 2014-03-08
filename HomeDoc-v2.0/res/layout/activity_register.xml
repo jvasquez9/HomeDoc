@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thebesttopdesktopgreywallpapershdgreywallpaper30"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Register" >
+
+    <TextView
+        android:id="@+id/textViewPG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Fill out form to begin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewPG2"
+        android:layout_marginTop="24dp"
+        android:text="First Name "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00688B"
+        android:text="Continue"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00688B"
+        android:text="Clear"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewState"
+        android:layout_below="@+id/textViewLastName"
+        android:layout_marginTop="42dp"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewFirstName"
+        android:layout_below="@+id/textViewFirstName"
+        android:layout_marginTop="22dp"
+        android:text="Last Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewFirstName"
+        android:layout_alignBottom="@+id/textViewFirstName"
+        android:layout_toRightOf="@+id/buttonCont"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLastName"
+        android:layout_alignBottom="@+id/textViewLastName"
+        android:layout_toRightOf="@+id/textViewLastName"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewAdress"
+        android:layout_toRightOf="@+id/textViewLastName"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCity"
+        android:layout_alignBottom="@+id/textViewCity"
+        android:layout_toRightOf="@+id/textViewCity"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewZip"
+        android:layout_centerVertical="true"
+        android:text="City"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCont"
+        android:layout_below="@+id/textViewState"
+        android:layout_marginTop="30dp"
+        android:text="Zip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUNEdit"
+        android:layout_below="@+id/editTextCity"
+        android:layout_marginTop="15dp"
+        android:text="State"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewState"
+        android:layout_alignBottom="@+id/textViewState"
+        android:layout_alignLeft="@+id/editTextCity"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewZip"
+        android:layout_alignBottom="@+id/textViewZip"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+</RelativeLayout>

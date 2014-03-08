@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thebesttopdesktopgreywallpapershdgreywallpaper30"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:text="Welcome to Home Doc"
+        android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewWelcome"
+        android:layout_centerVertical="true"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUN"
+        android:layout_alignBottom="@+id/textViewUN"
+        android:layout_toRightOf="@+id/textViewUN"
+        android:textColor="#00688B"
+        android:textStyle="bold" 
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewUN"
+        android:layout_below="@+id/editTextUN"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPW"
+        android:layout_alignBottom="@+id/textViewPW"
+        android:layout_toRightOf="@+id/textViewPW"
+        android:textColor="#00688B"
+        android:textStyle="bold" 
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPW"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/editTextPW"
+        android:textColor="@android:color/white"
+		android:background="#00688B"  
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonLogin"
+        android:layout_alignBottom="@+id/buttonLogin"
+        android:layout_alignLeft="@+id/editTextUN"
+        android:layout_alignRight="@+id/textViewWelcome"
+        android:background="#00688B"
+        android:text="Register"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

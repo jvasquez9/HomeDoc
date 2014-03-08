@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thebesttopdesktopgreywallpapershdgreywallpaper30"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegistrationConfirm" >
+
+    <TextView
+        android:id="@+id/textViewAddrConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNameConfirm"
+        android:layout_below="@+id/textViewNameConfirm"
+        android:text="Address:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCityConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAddrConfirm"
+        android:layout_below="@+id/textViewAddrConfirm"
+        android:text="City:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewStateConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCityConfirm"
+        android:layout_below="@+id/textViewCityConfirm"
+        android:text="State:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewEmailConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStateConfirm"
+        android:layout_below="@+id/textViewStateConfirm"
+        android:text="Email:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewUserNameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewEmailConfirm"
+        android:layout_below="@+id/textViewEmailConfirm"
+        android:text="User Name:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCofirmIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNameConfirm"
+        android:layout_alignParentTop="true"
+        android:text="Confirm"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewNameConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewCofirmIn"
+        android:text="Name:"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonConfirmFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewUserNameIn"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+		android:background="#00688B"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/buttonCancelConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonConfirmFinish"
+        android:layout_below="@+id/buttonEdit"
+        android:layout_marginTop="19dp"
+        android:textColor="@android:color/white"
+		android:background="#00688B"
+        android:text="Return to login" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonConfirmFinish"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+		android:background="#00688B"
+        android:text="Edit" />
+
+    <TextView
+        android:id="@+id/textViewNameConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewNameConfirm"
+        android:layout_alignBottom="@+id/textViewNameConfirm"
+        android:layout_toRightOf="@+id/textViewStateConfirm"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewAddrConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNameConfir"
+        android:layout_toRightOf="@+id/textViewAddrConfirm"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCityConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewStateConfirm"
+        android:layout_toRightOf="@+id/textViewCityConfirm"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewStateConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewStateConfirm"
+        android:layout_alignBottom="@+id/textViewStateConfirm"
+        android:layout_toRightOf="@+id/textViewStateConfirm"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewEmailConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewStateConfir"
+        android:layout_toRightOf="@+id/textViewNameConfirm"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewUserNameConfir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUserNameIn"
+        android:layout_alignBottom="@+id/textViewUserNameIn"
+        android:layout_toRightOf="@+id/textViewUserNameIn"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   />
+
+</RelativeLayout>

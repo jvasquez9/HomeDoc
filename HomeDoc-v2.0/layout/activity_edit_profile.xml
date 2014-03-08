@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thebesttopdesktopgreywallpapershdgreywallpaper30"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditProfile" >
+
+    <TextView
+        android:id="@+id/textViewEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Edit Items "
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewEditTitle"
+        android:layout_marginTop="20dp"
+        android:text="Name:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonSaveEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         android:textColor="@android:color/white"
+		android:background="#00688B"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSaveEdit"
+        android:layout_alignBottom="@+id/buttonSaveEdit"
+        android:layout_alignParentRight="true"
+         android:textColor="@android:color/white"
+		android:background="#00688B"
+        android:text="Change Password" />
+
+    <EditText
+        android:id="@+id/editTextNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewAddrEdit"
+        android:layout_toRightOf="@+id/buttonSaveEdit"
+        android:ems="10"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewAddrEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNameEdit"
+        android:layout_below="@+id/textViewNameEdit"
+        android:layout_marginTop="16dp"
+        android:text="Address:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextAddrEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNameEdit"
+        android:layout_toRightOf="@+id/textViewAddrEdit"
+        android:ems="10"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:inputType="textPostalAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewCityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCityEdit"
+        android:layout_toRightOf="@+id/textViewCityEdit"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewCityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAddrEdit"
+        android:layout_below="@+id/textViewAddrEdit"
+        android:layout_marginTop="37dp"
+        android:text="City:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextStateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewStateEdit"
+        android:layout_toRightOf="@+id/textViewStateEdit"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewStateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCityEdit"
+        android:layout_below="@+id/autoCompleteTextViewCityEdit"
+        android:layout_marginTop="22dp"
+        android:text="State:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewZipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStateEdit"
+        android:layout_below="@+id/textViewStateEdit"
+        android:layout_marginTop="18dp"
+        android:text="Zip:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextZipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewZipEdit"
+        android:layout_alignBottom="@+id/textViewZipEdit"
+        android:layout_alignRight="@+id/autoCompleteTextViewCityEdit"
+        android:ems="10"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewZipEdit"
+        android:layout_below="@+id/editTextZipEdit"
+        android:layout_marginTop="16dp"
+        android:text="Email:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextEmailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewUNEdit"
+        android:layout_toRightOf="@+id/textViewNameEdit"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textEmailAddress"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewUNEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewEmail"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_marginTop="17dp"
+        android:text="User Name:"
+         android:textColor="#00688B"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextUNEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUNEdit"
+        android:layout_alignBottom="@+id/textViewUNEdit"
+        android:layout_toRightOf="@+id/textViewUNEdit"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#00688B"
+        android:textStyle="bold" />
+
+</RelativeLayout>

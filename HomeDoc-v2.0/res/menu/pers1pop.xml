@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:id="@+id/group_popupmenu">
+      <item android:id="@+id/menu1"
+          android:title="Tramadol. Commonly used to treat severe to moderate pain \n
+          				Take three times daily according to pain, do not exceed \n
+          				more than 3 per day."/>
+  </group>
+</menu>
